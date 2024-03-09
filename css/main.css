@@ -5,14 +5,14 @@
 }
 body{
     display: grid;
-    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 10vh 90vh;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 .topbar,.leftbar,.rightbar{
     /* position: fixed; */
-    border: solid black 1px;
+    /* border: solid black 1px; */
     /* margin: 5px; */
 }
 
@@ -22,11 +22,15 @@ body{
    grid-column-start: 1;
    grid-column-end: 4;
    border-bottom: solid white 0.2px;
+   color: white;
+   font-size:40px;
+   text-align: center;
 }
 .rightbar{
     /* overflow-y: hidden; */
     color: white;
     text-align: center;
+    /* border: solid green 2px; */
 }
 .mainbar{
     overflow-y: scroll;

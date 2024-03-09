@@ -1,6 +1,7 @@
-@media only screen and (width < 550px) {
+@media only screen and (max-width:700px) {
     body{
-       grid-template-columns: 100vw;
+        /* display: grid; */
+        grid-template-columns: 100vw;
     }
     .mainbar{
         grid-column-start: 1;
@@ -9,11 +10,16 @@
  .leftbar{
     display: none;
  }
+ .rightbar {
+    display: none;
+ }
+
 }
 
-@media only screen and (550px < width < 725px){
+@media only screen and (min-width:700px) and (max-width:900px){
 body{
-    grid-template-columns: 30vw 70vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 .leftbar{
     grid-column-start: 1;
@@ -27,3 +33,8 @@ body{
     display: none;
 }
 }
+ @media only screen and (min-width:900px){
+    body{
+     grid-template-columns: 1fr 5fr 1fr;
+    }
+ }
