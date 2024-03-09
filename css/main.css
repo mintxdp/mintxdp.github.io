@@ -30,7 +30,7 @@ body{
     /* overflow-y: hidden; */
     color: white;
     text-align: center;
-    /* border: solid green 2px; */
+    border-left: solid white 0.2px;
 }
 .mainbar{
     overflow-y: scroll;
