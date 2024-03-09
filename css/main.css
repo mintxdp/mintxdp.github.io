@@ -27,6 +27,8 @@ body{
    text-align: center;
 
    display: grid;
+   /* place-items: center; */
+   align-items: center;
 
 }
 .topbar{
@@ -35,6 +37,7 @@ body{
 }
 .topitem{
     /* border: solid red 1px; */
+    /* border: solid green 1px; */
 
 }
 .rightbar{
