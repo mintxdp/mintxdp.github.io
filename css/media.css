@@ -1,0 +1,29 @@
+@media only screen and (width < 550px) {
+    body{
+       grid-template-columns: 100vw;
+    }
+    .mainbar{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+ .leftbar{
+    display: none;
+ }
+}
+
+@media only screen and (550px < width < 725px){
+body{
+    grid-template-columns: 30vw 70vw;
+}
+.leftbar{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.mainbar{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.rightbar{
+    display: none;
+}
+}

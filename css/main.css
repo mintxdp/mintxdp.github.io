@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 67, 64);
+}
+body{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 10vh 90vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.topbar,.leftbar,.rightbar{
+    /* position: fixed; */
+    border: solid black 1px;
+    /* margin: 5px; */
+}
+
+.topbar{
+   grid-row-start: 1;
+   grid-row-end: 2;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   border-bottom: solid white 0.2px;
+}
+.rightbar{
+    /* overflow-y: hidden; */
+    color: white;
+    text-align: center;
+}
+.mainbar{
+    overflow-y: scroll;
+    padding: 5%;
+    color: white;
+}
+/* left bar styling*/
+.leftbar{
+    padding: 5%;
+    border-right: solid white 0.2px;
+}
+.title{
+    font-family: monospace;
+    color: blue;
+    font-weight: bolder;
+}
+.content{
+   font-family: monospace;
+   /* line-height:; */
+   color: rgb(221, 218, 218);
+   margin-top: 5%;
+   font-weight:10
+}
+
