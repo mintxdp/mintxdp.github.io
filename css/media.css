@@ -13,7 +13,9 @@
  .rightbar {
     display: none;
  }
-
+ .rect{
+    width: 50%;
+ }
 }
 
 @media only screen and (min-width:700px) and (max-width:900px){
@@ -32,9 +34,15 @@ body{
 .rightbar{
     display: none;
 }
+.rect{
+    width: 40%;
+}
 }
  @media only screen and (min-width:900px){
     body{
      grid-template-columns: 1fr 5fr 1fr;
+    }
+    .rect{
+        width: 25%;
     }
  }

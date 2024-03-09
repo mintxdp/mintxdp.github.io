@@ -1,0 +1,11 @@
+.menubar{
+    display: grid;
+    /* width: 100%; */
+    /* height: 90%; */
+    place-items: center;
+}
+.rect{
+    width: 50%;
+    height: 20%;
+    background-color: white;
+}
