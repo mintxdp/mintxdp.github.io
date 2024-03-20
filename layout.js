@@ -12,27 +12,34 @@ menuState={
 state =false
 
 let nav = document.querySelector(".navbar")
-console.log(menuState.on)
+
+/*
+functions : 
+1. Show menu when clicked on it.
+2. Disable menu when again clicked on it.
+3. Disable menu when clicked and started scrolling.
+*/
 
 menubox.addEventListener('click',function (){
    if(state){
+
         menuState.off()
         nav.style.position='static'
         state=false;
    }
    else{
       menuState.on()
-      nav.style.position='fixed'
       state=true;
+     
+      window.addEventListener('scroll',function (){
+        menuState.off()
+        state=false
+        // nav.style.position='static'
+     })
+
    }
 })
 
 
-window.addEventListener('scroll',function (){
-   if(this.window.scrollY>2){
-    // nav.style.border='solid black 1px'
-   }
-   else{
-    nav.style.border='none'
-   }
-})
+
+
