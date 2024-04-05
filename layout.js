@@ -24,7 +24,7 @@ menubox.addEventListener('click',function (){
    if(state){
 
         menuState.off()
-        nav.style.position='static'
+        // nav.style.position='static'
         state=false;
    }
    else{
