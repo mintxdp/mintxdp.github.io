@@ -1,0 +1,39 @@
+@media (700px < width < 1500px) {
+    .menuitems{
+        width: 20vw;
+    }
+    #mycanvas{
+        /* width: 100%; */
+    }
+   
+}
+@media (width < 900px){
+    .toparea{
+        font-size:3rem;
+    }
+    .dheeraj{
+        /* font-size: 50%; */
+        /* width: ; */
+    }
+
+}
+@media (width < 700px){
+    .toparea{
+        font-size: 2rem;
+    }
+    .mainarea{
+        grid-column: 2/12;
+        grid-row: 1/3;
+    }
+    .topfield{
+        display: none;
+    }
+}
+@media(width > 700px ){
+    .menubar{
+        /* display: none; */
+    }
+    .menu{
+        display: none;
+    }
+}
