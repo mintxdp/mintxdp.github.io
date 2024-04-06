@@ -1,10 +1,18 @@
 
 :root {
---clr-main : rgb(0, 0, 0);
---clr-check : red;
+--clr-main :#040D12;
+--clr-sec : #183D3D;
+--clr-thi : #5C8374;
+--clr-fr : #93B1A6;
+
+--clr-fr-low:#93b1a69c;
+
+
+
 --test-border : solid black 1px;
 --width : calc(100%/7);
 }
+
 *{
     margin: 0;
 }
@@ -13,7 +21,7 @@
 
 body{
     overflow-x: hidden;
-    
+    /* background-color: var(--clr-main); */
 }
 .container{
     display: grid;
@@ -50,12 +58,12 @@ Boxes
 .secondbox{
     height: 100vh;
     grid-column: 1/13;
-    background-color: blue;
+    background-color: var(--clr-main);
 }
 .thirdbox{
     height: 100vh;
     grid-column: 1/13;
-    background-color: green;
+    background-color:var(--clr-main);
 }
 .fourthbox{
     height: 100vh;
@@ -68,6 +76,7 @@ Boxes
     /* background: transparent; */
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(12,1fr);
+    background-color: var(--clr-main);
 }
 
 /*
@@ -76,7 +85,7 @@ firstbox elements :
 .mainarea{
     grid-column: 3/11;
     grid-row: 1/3;
-    background-color: rgba(0, 0, 0, 0.925);
+    /* background-color: rgba(0, 0, 0, 0.925); */
     /* display: grid; */
 }
 .firstbox > .mainarea {
@@ -86,7 +95,7 @@ firstbox elements :
 
 .toparea{
     grid-row: 1/2;
-    background-color: rgb(162, 162, 216);
+    /* background-color: rgb(162, 162, 216); */
     width: 100%;
     height: 100%;
     /* border: solid 3px red; */
@@ -97,8 +106,9 @@ firstbox elements :
 }
 .hello{
     font-family:cursivefont;
-    color: black;
-    border: solid black 1px;
+    color: var(--clr-thi);
+    color: white;
+    /* border: solid black 1px; */
     font-size:2em ;
     font-weight: lighter;
     /* align-self: center; */
@@ -107,7 +117,7 @@ firstbox elements :
 }
 .bottomarea{
     grid-row: 2/4;
-    background-color: rgba(211, 245, 211, 0.301);
+    /* background-color: rgba(211, 245, 211, 0.301); */
     width: 100%;
     height: 100%;
     /* border: solid green 3px; */
@@ -116,7 +126,7 @@ firstbox elements :
     justify-content: flex-start;
 }
 .dheeraj{
-    border: solid red 1px;
+    /* border: solid red 1px; */
     display: grid;
     width:100%;
     height:100%;

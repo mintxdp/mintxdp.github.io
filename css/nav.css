@@ -2,8 +2,8 @@
     /* grid-column: 1/13; */
     width: 100vw;
     height: 3rem;
-    background-color: rgb(250, 119, 
-11);
+    background-color:var(--clr-fr);
+    /* fill-opacity: 0.2; */
     /* position: fixed; */
     display: flex;
     flex-direction:row;
@@ -13,7 +13,7 @@
     /* position: fixed; */
     /* top:10px; */
     /* border: solid black 1px; */
-    background: transparent;
+    /* background: transparent; */
 }
 
 .title{
@@ -27,9 +27,16 @@
     justify-content:left;
     /* place-items: center; */
 }
+
 .toptitle{
-    margin-top: 10px;
+    margin-top: 15px;
     
+}
+
+.toptitle > rect {
+    fill:black;
+    /* stroke: white; */
+    stroke-width: 1px;
 }
 
 .topfield{
@@ -54,6 +61,10 @@
    .fielditem{
        /* border: solid black 1px; */
        font-family: monospace;
+       color: white;
+       margin-top: 5px;
+       font-size: 1rem;
+       font-family: opensans;
        /* width: 20%; */
    }
    .emptyspace{
@@ -64,7 +75,7 @@
        /* justify-self:; */
        width: 50px;
        /* border: solid black 1px; */
-       margin-right: 3%;
+       margin-right: 2%;
        display: flex;
        flex-direction: column;
        height: 1.5rem;
@@ -88,16 +99,23 @@
        /* background-color: rgb(0, 0, 0); 
    */
    }
-   
+   .menuline > line {
+    stroke:black;
+    stroke-width: 2px;
+    /* fill: rgb(255, 255, 255); */
+   }
    .menuitems{
-       color:black;
-       border: solid gray 1px;
-       width: 30vw;
+
+       /* color:white; */
+       /* background-color: var(--clr-fr); */
+       /* border: solid gray 1px; */
+       width: 20vw;
        height: 30vh;
-       background-color:rgb(255, 255, 
-   255);
+       height: 200px;
+       /* background-color:rgb(255, 255,  */
+   /* 255); */
        position: fixed;
-       right: 0;
+       right:2%;
        top:3rem;
         /* border-radius: 20px; */
    }
@@ -107,7 +125,11 @@
        /* place-items: center; */
        width: 100%;
        height: 100%;
-   
+       background-color: var(--clr-fr);
+       color: white;
+       border: solid var(--clr-sec) 1px;
+      border-bottom-left-radius: 20px;
+       
    }
    .menuitem{
    font-family: opensans;
@@ -116,11 +138,12 @@
    text-align: center;
    display:grid;
    place-items: center;
-   
+   transition: background-color 0.5s ease-in;
    
    }
    .menuitem:hover{
-       background-color: bisque;
+       background-color: var(--clr-main);
+       opacity:0.5;
    }
    .menuitems{
        display: none;
