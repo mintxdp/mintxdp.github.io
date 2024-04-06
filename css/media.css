@@ -5,6 +5,9 @@
     #mycanvas{
         /* width: 100%; */
     }
+    .tracker{
+        right:10%;
+    }
    
 }
 @media (width < 900px){
@@ -27,6 +30,9 @@
     }
     .topfield{
         display: none;
+    }
+    .tracker{
+        right:3%;
     }
 }
 @media(width > 700px ){
