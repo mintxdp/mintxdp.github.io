@@ -101,6 +101,7 @@ firstbox elements :
     background-color: var(--clr-main);
     right:5%;
     top: 35%;
+    background: transparent;
 }
 .trackerline{
     width: 10px;

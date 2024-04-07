@@ -19,27 +19,47 @@ functions :
 2. Disable menu when again clicked on it.
 3. Disable menu when clicked and started scrolling.
 */
-
+let line2=document.querySelector('.line2')
 menubox.addEventListener('click',function (){
    if(state){
-
+    gsap.to('.line1',{
+        rotation:0
+    })
+    gsap.to('.line3',{
+        rotation:0
+    })
+    line2.style.stroke='black'
         menuState.off()
         // nav.style.position='static'
         state=false;
    }
    else{
       menuState.on()
+      gsap.to('.line1',{
+        rotation:40
+    })
+    gsap.to('.line3',{
+        rotation:-40
+    })
+    line2.style.stroke='#93B1A6'
+
       state=true;
      
       window.addEventListener('scroll',function (){
         menuState.off()
         state=false
         // nav.style.position='static'
+        gsap.to('.line1',{
+            rotation:0
+        })
+        gsap.to('.line3',{
+            rotation:0
+        })
+        line2.style.stroke='black'
+        
      })
 
    }
 })
-
-
 
 
