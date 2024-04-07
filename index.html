@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
    <div class="container">
       <div class="navbar">
@@ -75,10 +76,10 @@
            </div>
            <div class="tracker">
             <svg class="trackerline">
-               <line x1="5" y1="0" x2="5" y2="100%" style="stroke:white;stroke-width:2px;"/>
-               <circle cx="5" cy="5" r="5" style="stroke:black;stroke-width:0.5;fill:white;" />
-               <circle cx="5" cy="50%" r="5" style="stroke:black;stroke-width:0.5;fill:white;"  />
-               <circle cx="5" cy="97%" r="5" style="stroke:black;stroke-width:0.5;fill:white;" />
+               <line   x1="5" y1="0" x2="5" y2="100%" style="stroke:white;stroke-width:2px;"/>
+               <circle class="tracker_circle1" cx="5" cy="5" r="5"   style="fill:orange;" />
+               <circle class="tracker_circle2" cx="5" cy="50%" r="5" style="fill:green;"  />
+               <circle class="tracker_circle3" cx="5" cy="191" r="5" style="fill:blue;" />
             </svg>
            </div>
                <div class="firstbox">
@@ -86,8 +87,8 @@
                   <div class="mainarea "></div>
 
                 </div>
-                <div class="secondbox"><div class="mainarea"></div></div>
-                <div class="thirdbox" ><div class="mainarea"></div></div>
+                <div class="secondbox"><div class="mainarea mainarea2"><h1 class="test2">test2</h1></div></div>
+                <div class="thirdbox" ><div class="mainarea mainarea3"><h1 class="test3">test3</h1></div></div>
                 <!-- <div class="fourthbox"><div class="mainarea"></div></div> -->
    </div>
    

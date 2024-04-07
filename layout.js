@@ -1,3 +1,6 @@
+
+gsap.registerPlugin(ScrollTrigger)
+
 let menubox = document.querySelector('.menu')
 let menuitems = document.querySelector('.menuitems')
 
@@ -61,5 +64,38 @@ menubox.addEventListener('click',function (){
 
    }
 })
+
+gsap.to('.tracker_circle1',{
+     y:91,
+     duration:4,
+    scrollTrigger : {
+        trigger : ".mainarea2",
+        start: "top 100%",
+        end:"top 0%",
+        scrub:true,
+        // markers : {
+            // startColor: 'purple',
+            // endColor : 'orange',
+            // fontSize:'2rem'
+        // },
+    }
+})
+
+gsap.to('.tracker_circle2',{
+    y:91,
+    duration:4,
+   scrollTrigger : {
+       trigger : ".mainarea3",
+       start: "top 100%",
+       end:"top 0%",
+       scrub:true,
+    //    markers : {
+        //    startColor: 'purple',
+        //    endColor : 'orange',
+        //    fontSize:'2rem'
+    //    },
+   }
+})
+
 
 
