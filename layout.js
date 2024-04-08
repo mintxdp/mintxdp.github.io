@@ -65,9 +65,12 @@ menubox.addEventListener('click',function (){
    }
 })
 
+let tracker = document.querySelector('.tracker')
+
+let tracker_height=tracker.clientHeight;
+
 gsap.to('.tracker_circle1',{
-     y:91,
-     duration:4,
+     y:tracker_height/2-5,
     scrollTrigger : {
         trigger : ".mainarea2",
         start: "top 100%",
@@ -82,8 +85,7 @@ gsap.to('.tracker_circle1',{
 })
 
 gsap.to('.tracker_circle2',{
-    y:91,
-    duration:4,
+    y:tracker_height/2-5,
    scrollTrigger : {
        trigger : ".mainarea3",
        start: "top 100%",
