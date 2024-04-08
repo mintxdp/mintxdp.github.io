@@ -98,17 +98,20 @@ firstbox elements :
 .tracker{
     position: fixed;
     width:10px;
-    height:30%;
+    height:200px;
     background-color:var(--clr-main);
     right:5%;
-    top: 35%;
+    top: calc(50%);
     background: transparent;
 }
 .trackerline{
     width: 10px;
     height: 100%;
+    stroke-opacity:0.3;
 }
-
+.tracker_circle1,.tracker_circle2,.tracker_circle3{
+    fill:white;
+}
 .test2,.test3{
     color: white;
     font-size: 100px;
