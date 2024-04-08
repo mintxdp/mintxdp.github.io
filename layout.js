@@ -69,8 +69,22 @@ let tracker = document.querySelector('.tracker')
 
 let tracker_height=tracker.clientHeight;
 
+let tracker_circle2=document.querySelector('.tracker_circle2')
+let tracker_circle3=document.querySelector('.tracker_circle3')
+
+
+window.addEventListener('resize',function(){
+   tracker_height=tracker.clientHeight;
+})
+
+tracker_circle2.setAttribute('cy',`${tracker_height/2 -5}
+`)
+tracker_circle3.setAttribute('cy',`${tracker_height-5}`)
+
+
+
 gsap.to('.tracker_circle1',{
-     y:tracker_height/2-5,
+     y:tracker_height/2-10,
     scrollTrigger : {
         trigger : ".mainarea2",
         start: "top 100%",
@@ -85,7 +99,7 @@ gsap.to('.tracker_circle1',{
 })
 
 gsap.to('.tracker_circle2',{
-    y:tracker_height/2-5,
+    y:tracker_height/2,
    scrollTrigger : {
        trigger : ".mainarea3",
        start: "top 100%",
