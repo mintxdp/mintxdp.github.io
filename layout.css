@@ -101,7 +101,7 @@ firstbox elements :
     height:200px;
     background-color:var(--clr-main);
     right:5%;
-    top: calc(50%);
+    top: 50%;
     background: transparent;
 }
 .trackerline{
@@ -111,6 +111,7 @@ firstbox elements :
 }
 .tracker_circle1,.tracker_circle2,.tracker_circle3{
     fill:white;
+    fill-opacity: 0.2;
 }
 .test2,.test3{
     color: white;

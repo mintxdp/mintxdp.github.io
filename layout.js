@@ -76,7 +76,12 @@ let tracker_circle3=document.querySelector('.tracker_circle3')
 
 gsap.to('.tracker_circle1',{
      y:95,
-     fill:'#93B1A6',
+     fill:'orange',
+     fillOpacity:1,
+    attr:{
+        r:'3',
+        fill:'#5C8374',
+    },
     scrollTrigger : {
         trigger : ".mainarea2",
         start: "top 100%",
@@ -92,7 +97,12 @@ gsap.to('.tracker_circle1',{
 
 gsap.to('.tracker_circle2',{
     y:95,
-    fill:'#5C8374',
+    fill:'green',
+    fillOpacity:1,
+    attr :{
+        r:'3',
+        fillOpacity:1,
+    },
     // z:10,
    scrollTrigger : {
        trigger : ".mainarea3",
