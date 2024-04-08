@@ -101,7 +101,7 @@ firstbox elements :
     height:200px;
     background-color:var(--clr-main);
     right:5%;
-    top: 50%;
+    top: calc(50vh - 100px);
     background: transparent;
 }
 .trackerline{
