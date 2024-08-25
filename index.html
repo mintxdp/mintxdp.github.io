@@ -4,94 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
-   <div class="container">
-      <div class="navbar">
-            <div class="title">
-               <svg class="toptitle" width="110px" height="50px" >
-                 
-                  <rect x="0" y="5" width="5px"   height="40%"/>
-                  <rect x="10" y="10" width="5px" height="30%"/>
-                  <rect x="20" y="10" width="5px" height="30%"/>
-                  <rect x="0" y="10" width="25px" height="10%"/>
+<body>
 
-                  
-                  <rect x="30" y="10" width="5px" height="30%"/>
-                  <rect x="30" y="0" width="5px"  height="10%"/>
-
-                  <rect x="40" y="10" width="5px" height="30%"/>
-                  <rect x="50" y="10" width="5px" height="30%"/>
-                  <rect x="40" y="10" width="15px" height="10%"/>
-
-                  <rect x="60" y="0" width="5px" height="50%"/>
-                  <rect x="50" y="10" width="20px" height="10%"/>
-
-                  <rect x="70" y="15" width="5px" height="10%"/>
-                  <rect x="75" y="10" width="5px" height="10%"/>
-                  <rect x="75" y="20" width="5px" height="10%"/>
-                  <rect x="65" y="20" width="5px" height="10%"/>
-
-                  <rect x="100" y="5" width="10px" height="20%"/>
-                  <rect x="95" y="5" width="5px" height="40%"/>
-                  <rect x="85" y="15" width="10px" height="20%"/>
-
-
-               </svg>
+    <div class="mainbox">
+        <div class="fixed_footer">  </div>
+            <div class="personal">
+           <!-- <span class="hi">hi</span> <br> -->
+           <!-- <span class="name"> Dheeraj Prakash</span> -->
             </div>
-            <div class="topfield"> 
-               <!-- <div class="forcenter"> -->
-                  <div class="emptyspace"></div>
-               <ul class="fielditem">projects</ul>
-               <ul class="fielditem">contact</ul>
-               <ul class="fielditem">home</ul>
-               <ul class="fielditem">explore</ul>
-            <!-- </div> -->
-            </div>
-            <div class="menu">
-               <div class="menubar">
-                  <svg class="menuline" width="50px" height="100%">
-                     <line class="line1" x1="14" y1="5" x2="36" y2="5"  />
-                     <line class="line2" x1="14" y1="12" x2="36" y2="12"/>
-                     <line class="line3" x1="14" y1="19" x2="36" y2="19"/>
 
 
-                  </svg>
-               </div>
-            </div>
-       </div>
-          <div class="menuitems" id="togglemenu">
-            <div class="menubox">
-               <div class="menuitem">Home</div>
-               <div class="menuitem">Contact</div>
-               <div class="menuitem">Projects</div>
-               <div class="menuitem">Blogs</div>
-               <div class="menuitem">Explore</div>
-            </div>
-           </div>
-           <div class="tracker">
-            <svg class="trackerline">
-               <line   x1="5" y1="2.5" x2="5" y2="197.5" style="stroke:white;stroke-width:2px;"/>
-               <circle class="tracker_circle1" cx="5" cy="5" r="5"   style="fill:white;" />
-               <circle class="tracker_circle2" cx="5" cy="100" r="5" style="fill:white;"  />
-               <circle class="tracker_circle3" cx="5" cy="195" r="5" style="fill:white;" />
-            </svg>
-           </div>
-               <div class="firstbox">
-                  
-                  <div class="mainarea "></div>
+
+        <div class="project">
+           
+        
+            <!-- projects -->
+             <div class="top_space">
+             </div>
+             <div class="project1 projects" id="project">
+               
+                <div class="project_detail">
+                    <div class="tracker">
+                          <div class="circle circle1"></div>
+                          <div class="line1 line11"></div>
+                          <div class="square square1"></div>
+                          <div class="line2 line21"></div>
+                    </div>
+                </div>
+                <div class="project_content project_content1 ">
+                    <span class="project_title">Project1</span>
+                    <div class="project_stack"></div>
+
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas sint officiis, maxime vel eveniet, ex ea atque error asperiores veritatis. Eaque quibusdam, dolor possimus aliquid aperiam doloribus ea magni excepturi quia debitis laudantium, id quidem non ullam nulla odit vel commodi maxime neque praesentium odio expedita rerum. Deleniti corporis suscipit pariatur aliquam nulla maxime obcaecati cum blanditiis soluta aliquid sequi esse rem aut amet, repellendus, accusamus eos porro consectetur!</p>
+                    
+                    <div class="project_link">
+                        <a href=""><img src="assets/icons8-github.svg" alt=""   width="30px" height="30px" class="github"></a>
+                    </div>
 
                 </div>
-                <div class="secondbox"><div class="mainarea mainarea2"><h1 class="test2">test2</h1></div></div>
-                <div class="thirdbox" ><div class="mainarea mainarea3"><h1 class="test3">test3</h1></div></div>
-                <!-- <div class="fourthbox"><div class="mainarea"></div></div> -->
-   </div>
-   
-      <script src="layout.js"></script>
+             </div>
+             
+             <div class="project2 projects">
+                
+                <div class="project_detail">
+                    <div class="tracker">
+                        <div class="line1"></div>
+                        <div class="square square2"></div>
+                        <div class="line2"></div>
+                  </div>
+                </div>
+                <div class="project_content project_content2">
+                    <span class="project_title">Project2</span>
+                    <div class="project_stack"></div>
+                    <p class="content content2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas sint officiis, maxime vel eveniet, ex ea atque error asperiores veritatis. Eaque quibusdam, dolor possimus aliquid aperiam doloribus ea magni excepturi quia debitis laudantium, id quidem non ullam nulla odit vel commodi maxime neque praesentium odio expedita rerum. Deleniti corporis suscipit pariatur aliquam nulla maxime obcaecati cum blanditiis soluta aliquid sequi esse rem aut amet, repellendus, accusamus eos porro consectetur!</p>
+                    <div class="project_link">
+                        <a href=""><img src="assets/icons8-github.svg" alt="" width="35px" height="35px" class="github">
+                        </a>
+                        <!-- <span>Github</span> -->
+                        <img src="assets/reshot-icon-arrow-up-ZQ3F976AXM (1).svg" alt="" width="15px" height="15px" class="arrow">
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="project3 projects">
+                   
+                    <div class="project_detail">
+                          <div class="tracker">
+                             <div class="line1"></div>
+                              <div class="square square3"></div>
+                             <div class="line2"></div>
+                         </div>
+                    </div>
+                    <div class="project_content project_content3">
+                        <span class="project_title">Project3</span>
+                        <div class="project_stack"></div>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptas sint officiis, maxime vel eveniet, ex ea atque error asperiores veritatis. Eaque quibusdam, dolor possimus aliquid aperiam doloribus ea magni excepturi quia debitis laudantium, id quidem non ullam nulla odit vel commodi maxime neque praesentium odio expedita rerum. Deleniti corporis suscipit pariatur aliquam nulla maxime obcaecati cum blanditiis soluta aliquid sequi esse rem aut amet, repellendus, accusamus eos porro consectetur!</p>
+
+                        <div class="project_link">
+                            <a href=""><img src="assets/icons8-github.svg" width="30px" height="30px" alt="" class="github"></a>
+                        </div>
+                    </div>
+                       
+                </div>
+                <div class="project4">
+
+                </div>
+                    
+
+             </div>
+
+
+             
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
