@@ -84,14 +84,14 @@ function Generate(){
     gsap.registerPlugin(ScrollTrigger)
 
 const project = document.querySelector('.project1')
-console.log((project.clientWidth))
+// console.log((project.clientWidth))
 let square_width = 10
 
 let percent = (10/100 * project.clientWidth)
-console.log(percent)
+// console.log(percent)
 
 let scalePercent = 18/100 * project.clientWidth /10
-console.log(scalePercent)
+// console.log(scalePercent)
 
 
 let tl =gsap.timeline({
@@ -120,8 +120,9 @@ let tl2 =gsap.timeline({
 }
 )
 
-tl2.to('.project_content2',{x:50})
-.to('.square2',{scale:3},0)
+tl2.to('.project_content2',{x:percent})
+.to('.square2',{scale:scalePercent},0)
+.to('.tracker2',{x:percent/2},0)
 
 
 let tl3 =gsap.timeline({
@@ -135,13 +136,20 @@ let tl3 =gsap.timeline({
 }
 )
 
-tl3.to('.project_content3',{x:50})
-.to('.square3',{scale:3},0)
+tl3.to('.project_content3',{x:percent})
+.to('.square3',{scale:scalePercent},0)
+.to('.tracker3',{x:percent/2},0)
 
 
 let footer=document.querySelector('.fixed_footer')
-document.addEventListener('resize',function(){
-    
+
+
+ if(document.body.clientWidth >= 1.5*document.body.clientHeight)
+         footer.style.width=`${50}px`
+
+
+document.body.addEventListener('resize',function(){
+    console.log(document.body.clientWidth,document.body.clientHeight)
     if(document.body.clientWidth >= 1.5*document.body.clientHeight){
          footer.style.width=`${50}px`
     }
