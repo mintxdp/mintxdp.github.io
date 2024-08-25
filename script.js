@@ -79,68 +79,21 @@ function Generate(){
 }
 
 
+// Animation : 
 
-// Animation 
-
-// let projects = document.getElementsByClassName('projects')
-// let content = document.getElementsByClassName('content')
-// let circle = document.getElementsByClassName('.circle')
-
-// console.log(projects[0])
-// console.log(content[0])
-
-// window.addEventListener('scroll',function(){
-
-// })
-
-
-// document.addEventListener("DOMContentLoaded", (event) => {
     gsap.registerPlugin(ScrollTrigger)
-// })
-const items = document.querySelectorAll('.content')
-let oh = document.getElementsByClassName('content')
-console.log(oh[0].getBoundingClientRect())
 
-// items.forEach(item => {
-//     gsap.to(item,
-//         {
-//             scrollTrigger : {
-//                 trigger : item,
-//                 scroller : '.project',
-//                 start : "top 300",
-//                 end : "top 150px",
-//                 scrub : true,
-//                 markers : true
-//             },
-//             x : 50,
-//             // duration : 1,
-//             // ease : "power2.out"
-//         }
-//     )
-// })
+const project = document.querySelector('.project1')
+console.log((project.clientWidth))
+let square_width = 10
+
+let percent = (10/100 * project.clientWidth)
+console.log(percent)
+
+let scalePercent = 18/100 * project.clientWidth /10
+console.log(scalePercent)
 
 
-
-// items.forEach(item => {
-//     gsap.to(item,{
-//         scrollTrigger : {
-//             trigger : item,
-//             scroller : '.project',
-//             start : "bottom 150px",
-//             end : "bottom 50px",
-//             scrub : false,
-//             markers : {
-//                 startColor : "yellow",
-//                 endColor : "blue",
-//                 fontSize : "12px",
-//                 indent : 20
-//             }
-//         },
-//         x : 0,
-//         duration : 1,
-//         ease : "power2.out"
-//     })
-// })
 let tl =gsap.timeline({
     scrollTrigger : {
         scroller : '.project',
@@ -152,8 +105,9 @@ let tl =gsap.timeline({
 }
 )
 
-tl.to('.project_content1',{  x : 50})
-.to('.square1',{scale:3},0)
+tl.to('.project_content1',{  x : percent})
+.to('.square1',{scale:scalePercent},0)
+.to('.tracker1',{x:percent/2},0)
 
 let tl2 =gsap.timeline({
     scrollTrigger : {
