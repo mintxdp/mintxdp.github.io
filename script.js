@@ -137,3 +137,12 @@ let tl3 =gsap.timeline({
 
 tl3.to('.project_content3',{x:50})
 .to('.square3',{scale:3},0)
+
+
+let footer=document.querySelector('.fixed_footer')
+document.addEventListener('resize',function(){
+    
+    if(document.body.clientWidth >= 1.5*document.body.clientHeight){
+         footer.style.width=`${50}px`
+    }
+})
