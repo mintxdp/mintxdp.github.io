@@ -98,8 +98,8 @@ let tl =gsap.timeline({
     scrollTrigger : {
         scroller : '.project',
         trigger : '.project1',
-        start : 'top 100px',
-        end : 'top 0px',
+        start : 'top 250px',
+        end : 'top 200px',
         scrub : true
     }
 }
