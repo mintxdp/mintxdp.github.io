@@ -98,7 +98,7 @@ let tl =gsap.timeline({
     scrollTrigger : {
         scroller : '.project',
         trigger : '.project1',
-        start : 'top 250px',
+        start : 'top 300px',
         end : 'top 200px',
         scrub : true
     }
@@ -113,8 +113,8 @@ let tl2 =gsap.timeline({
     scrollTrigger : {
         scroller : '.project',
         trigger : '.project2',
-        start : 'top 100px',
-        end : 'top 0px',
+        start : 'top 300px',
+        end : 'top 200px',
         scrub : true
     }
 }
@@ -129,8 +129,8 @@ let tl3 =gsap.timeline({
     scrollTrigger : {
         scroller : '.project',
         trigger : '.project3',
-        start : 'top 100px',
-        end : 'top 0px',
+        start : 'top 300px',
+        end : 'top 200px',
         scrub : true
     }
 }
