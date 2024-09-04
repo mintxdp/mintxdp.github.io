@@ -108,6 +108,9 @@ let tl =gsap.timeline({
 tl.to('.project_content1',{  x : percent})
 .to('.square1',{scale:scalePercent},0)
 .to('.tracker1',{x:percent/2},0)
+.to('.project_title1',{y:-35},0)
+.to('.stackimg',{scale : 2},0)
+.to('.content1',{y : 35},0)
 
 let tl2 =gsap.timeline({
     scrollTrigger : {
